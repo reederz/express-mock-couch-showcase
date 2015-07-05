@@ -3,5 +3,5 @@ The repo contains code related to [this post](http://fadeit.dk/blog/post/testing
 
 ## Installing dependencies
 ```bash
-npm install mock-couch coffee-script gulp gulp-mocha should supertest express body-parser nano q
+npm install mock-couch coffee-script gulp gulp-mocha should supertest express nano q
 ```

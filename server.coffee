@@ -1,12 +1,8 @@
-bodyParser = require 'body-parser'
 express    = require 'express'
 DAL        = require './dal'
 
 dal = new DAL(process.env.COUCH_PORT, process.env.DATABASE)
 app = express()
-
-app.use bodyParser.urlencoded
-  extended: true
 
 app.get '/sofas', (req, res) ->
   dal.getSofas()
