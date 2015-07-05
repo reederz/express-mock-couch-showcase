@@ -17,7 +17,7 @@ gulp.task 'test', ->
 
 # Task to run integration tests (real CouchDB backend)
 gulp.task 'test-int', ->
-  process.env.NODE_ENV = 'test'
+  process.env.NODE_ENV = 'test-int'
   process.env.PORT = 3010
   process.env.COUCH_PORT = 5984
   process.env.DATABASE = 'sofas_test'
